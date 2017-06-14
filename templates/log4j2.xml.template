@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="trace" monitorInterval="30">
+	<Appenders>
+		<RollingFile name="RollingFile"
+			fileName="#logfilename#" >
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="#log4j.appender.file.MaxFileSize#" />
+			</Policies>
+			<DefaultRolloverStrategy max="#log4j.appender.file.MaxBackupIndex#" />
+		</RollingFile>
+	</Appenders>
+</configuration>
