@@ -7,12 +7,16 @@ This is inspired from the this github blog(Rick-Houser/Server_Config) ,i wanted 
 
 
 # How to Configure:
-•	To install a package, add the package name to the "install.lst" inside the "packages" directory. Each package name should be on it's own line.
-•	For removing an installed package, follow you will do the same as you did to install a package. This time you will add the package names to the "uninstall.lst" file inside the "packages" directory.
-•	you will need to add key value pairs into the "config.properties" file. Key value pairs must be separated by "=" 
-•	Php application content can be included in “files” folder with index.php file
-•	To install any dependency scripts before executing steps described above update the “dependency.sh” script in “dependencies” folder .
-•	Then invoke the cmTool.pl file from “bin” folder to apply the configuration changes written above.
+To install a package, add the package name to the "install.lst" inside the "packages" directory. Each package name should be on it's own line.
+For removing an installed package, follow you will do the same as you did to install a package. This time you will add the package names to the "uninstall.lst" file inside the "packages" directory.
+
+you will need to add key value pairs into the "config.properties" file. Key value pairs must be separated by "=" 
+
+Php application content can be included in “files” folder with index.php file
+
+To install any dependency scripts before executing steps described above update the “dependency.sh” script in “dependencies” folder .
+
+Then invoke the cmTool.pl file from “bin” folder to apply the configuration changes written above.
 
 # Usage
 Transfer tarfile to the destination server using the following syntax or use one of the scp tools to transfer the file .
